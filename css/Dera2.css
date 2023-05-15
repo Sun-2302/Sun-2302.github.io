@@ -1,0 +1,294 @@
+/*----------------Responsive----------------*/
+@media (max-width : 1030px){
+    /*------------NavBar-------------*/
+    .head-1{
+        display: none;
+    }
+    .head-2{
+        display: block !important;
+    }
+    .nav-btn{
+        background: none;
+        border: none;
+        font-size: 7vw;
+        color: #6C584C;
+    }
+    .nav-btn:hover{
+        background-color: #A98467;
+        color: #F0EAD2;
+        border-radius: 20%;
+    }
+    .navbar-brand{
+        margin-left: 0vw;
+        margin-right: 0vw !important; 
+    }
+    .nav{
+        font-size: 3vw;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row !important;
+    }
+    .nav-link{
+        width: 40vw;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .nav-link:hover{
+        scale: 1 !important;
+        background-color: #A98467;
+    color: #F0EAD2 !important;
+    }
+    /*Home*/
+    .home{
+        margin-top: 0;
+    }
+    .home-title{
+        font-size: 6vw !important;
+        margin-bottom: 0;
+    }
+    .home-presentation{
+        font-size: 3vw;
+        width: 50vw;
+        margin-top: 2vh;
+    }
+
+    /*About Me*/
+    #about{
+        text-align: center;
+        align-items: center;
+    }
+    .about-img{
+        width: 45vw;
+        margin: 0;
+    }
+    .about-text-1{
+        width: 75vw;
+        margin-top: 3vh;
+        margin-left: 11vw;
+        font-size: 3vw;
+    }
+    .about-text-2{
+        margin-top: 2vh;
+        width: 75vw;
+        margin-left: 11vw;
+        font-size: 3vw;
+    }
+    .about-text-3{
+        margin-top: 2vh;
+        width: 75vw;
+        margin-left: 11vw;
+        font-size: 3vw;
+    }
+
+    /*-------------Skills-------------*/
+    .skills{
+        display: flex;
+        flex-direction: column;
+        
+        background-image: url(../Img/background_R1.png);
+    }
+    .skill-details{
+        margin-top: 7vh;
+        margin-left: 0;
+    }
+    .skill-title{
+        margin-top: 3vw;
+        color: #6C584C;
+        border-bottom: 2px solid #ADC178;
+        width: 50vw;
+    }
+    .skill-text{
+        width: 75vw;
+        font-size: 3vw;
+    }
+    /*Portfolio*/
+    .portfolio{
+        height: 70vh;
+    }
+    .portfolio-1{
+        display: none !important;
+    }
+    .portfolio-2{
+        display: block;
+        margin-top: 50vw;
+    }
+    .portfolio-list{
+        font-size: 3vw;
+    }
+
+    /*Exhibition*/ 
+    .exhibition{
+        padding-top: 5vh;
+    }
+    .exhibition-list{
+        display: none !important;
+    }
+    .exhibition-slide{
+        display: block;
+        margin-top:5vh ;
+    }
+    .exhibition-text-title{
+        font-size: 3.1vw;
+    }
+    .exhibition-text{
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+     /*Commissions*/
+     .commission{
+        background-image: url(../Img/background_R2.png);
+     }
+     .commission-list{
+        font-size: 3vw;
+    }
+    .price-list{
+        padding-left: 0;
+    }
+    .price-list-3{
+        padding-left: 0;
+    }
+    .price-list ul{
+        font-size: 4vw;
+        margin-top: 15vw;
+
+    }
+    .price-list-3 div ul{
+        font-size: 4vw;
+        margin-top: 15vw;
+    }
+    .information-list{
+        font-size: 3vw;
+        width: 75vw;
+        padding-left: 10vw;
+    }
+    .commission-img{
+        height: 30vh;
+    }
+    .line-3{
+        margin-left: 30vw;
+    }
+    .line-33{
+        margin-left: 22vw;
+    }
+    /*Testimonials*/
+    .testimonial{
+        padding-top: 10vw;
+    }
+    .testimonial-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonial-example{
+        width: 60vw;
+        padding-bottom: 3vw;
+    }
+    .testimonial-text{
+        font-size: 3vw;
+    }
+    .testimonial-name{
+        font-size: 4vw;
+    }
+    /*Contact*/
+    .contact{
+        padding-top: 10vw;
+    }
+    .line{
+        width: 30vw;
+        margin-left:34vw ;
+    }
+    .contact-1{
+        width: 100vw;
+        margin-left: 6vw;
+    }
+    .contact-icon{
+        font-size: 6vw;
+        margin-right: 1vw;
+        margin-top: 1vh;
+    }
+    .social-network{
+        text-align: center;
+        margin-right: 10vw;
+    }
+    .network-icon{
+        font-size: 8vw;
+        margin-right: 1vw;
+    }
+    .network-icon-bg{
+        font-size: 5.7vw;
+    }
+    .contact-2{
+        margin-top: 7vw;
+        margin-left: 0;
+        text-align: center;
+    }
+    #my-mail, #my-name{
+        width: 75vw;
+        margin-right: 0;
+        margin-bottom: 2vw;
+    }
+    #my-subject, #my-message{
+        padding-left: 1vw;
+        width: 75vw;
+        margin-bottom: 2vw;
+    }
+
+    /*Arrow-up*/
+    .arrow-up{
+        margin-left: 85vw !important;
+    }
+}
+
+@media (min-width : 540px) and (max-width : 950px){
+    .line-3{
+        margin-left: 24vw;
+    }
+}
+
+@media (min-width : 1440px) and (max-width:2000px){
+    .home-img-2{
+        width: 35vw;
+        height: 40vh;
+    }
+    .about-title{
+        margin-top: 15vw;
+    }
+    .about-img{
+        width: 25vw;
+        margin-top: 6vw;
+        margin-left: 3vw;
+        margin-right: 2vw;
+    }
+    .skills{
+        background-image: url(../Img/background_14.png);
+    }
+}
+@media (min-width : 2100px){
+    .home-img-2{
+        width: 35vw;
+        height: 45vh;
+    }
+    .about-title{
+        margin-top: 10vw;
+    }
+    .about-img{
+        width: 25vw;
+        margin-top: 6vw;
+        margin-left: 3vw;
+        margin-right: 2vw;
+    }
+    .contact-details-text{
+        font-size: 1.3vw;
+    }
+    .contact-me{
+        font-size: 1.5vw;
+    }
+    .input{
+        font-size: 1.3vw;
+    }
+    footer{
+        font-size: 1.3vw;
+    }
+}

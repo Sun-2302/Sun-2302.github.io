@@ -1,0 +1,88 @@
+/*Portfolio Slide*/
+.items, .items-2, .items-3, .items-4 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+.items .item, .items-2 .item-2, .items-3 .item-3, .items-4 .item-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  z-index: -1;
+  opacity: 0;
+}
+.item img, .item-2 img,  .item-3 img,  .item-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item.active, .item-2.active, .item-3.active, .item-4.active{
+  opacity: 1;
+  z-index: 99;
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+.item.prev, .item-2.prev, .item-3.prev, .item-4.prev {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(-125%, -50%);
+}
+.item.next, .item-2.next, .item-3.next, .item-4.next {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(25%, -50%);
+}
+.items .button-container,.items-2 .button-container,.items-3 .button-container,.items-4 .button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 275px;
+  z-index: 100;
+}
+.button-container .button,.button-container .button-2,.button-container .button-3,.button-container .button-4 {
+  color: #F0EAD2;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.75;
+  transition: all 300ms ease-in-out;
+}
+.button-container .button:hover,.button-container .button-2:hover,.button-container .button-3:hover,.button-container .button-4:hover {
+  opacity: 1;
+}
+.button-container .button:before, .button-container .button-2:before,.button-container .button-3:before,.button-container .button-4:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #6C584C;
+  border-radius: 50%;
+  z-index: -99;
+}
+.button-container .button:nth-child(1),.button-container .button-2:nth-child(1),.button-container .button-3:nth-child(1),.button-container .button-4:nth-child(1) {
+  float: left;
+}
+.button-container .button:nth-child(2),.button-container .button-2:nth-child(2),.button-container .button-3:nth-child(2),.button-container .button-4:nth-child(2) {
+  float: right;
+}
+
+/*Scrolling animation*/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active-2{
+  transform: translateY(0);
+  opacity: 1;
+}

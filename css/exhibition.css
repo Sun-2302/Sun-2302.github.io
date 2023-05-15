@@ -1,0 +1,77 @@
+/*----------------Exhibition Modal----------------*/
+.exhibition-example{
+    overflow: hidden;
+    width: 60vw;
+    background-color: #F0EAD2;
+    margin-left: 11vw;
+    margin-top: 1vw;
+    padding: 2vw 5vw 5vw 5vw;
+    color: #6C584C;
+    text-align: center;
+}
+.exhibition-example-main{
+    margin-top: 3vw;
+}
+.exhibition-example-img{
+    width: 15vw;
+    height: 40vh;
+
+}
+.exhibition-example-text-1{
+    padding-left: 5vw;
+    text-align: left;
+    font-size: 1.3vw;
+}
+.exhibition-example-text-2{
+    text-align: left;
+    padding-top: 3vw;
+}
+.exhibition-example-title{
+    text-align: center;
+}
+.artwork-title{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 0;
+}
+.artwork-list{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+    
+}
+.exhibition-artwork{
+    width: 10vw;
+}
+.close-btn{
+    border: none;
+    background-color: #ADC178;
+    margin-top: 3vw;
+    padding: 0.5vw;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width : 1030px){
+    
+    .exhibition-example{
+        padding: 2vw 2vw;
+    }
+    .exhibition-example-img{
+        width: 50vw;
+        height: 30vh;
+    }
+    .exhibition-example{
+        width: 85vw;
+        margin-left: 2vw;
+    }
+    .exhibition-example-text-1{
+        margin-top: 5vw;
+        font-size: 3vw;
+    }
+    .exhibition-artwork{
+        width: 20vw;
+    }
+}

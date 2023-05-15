@@ -1,0 +1,169 @@
+/*----------------Portfolio Slide---------------- */
+const portfolioSlide_1 = function(){
+	const slider = document.querySelector(".items");
+	const slides = document.querySelectorAll(".item");
+	const button = document.querySelectorAll(".button");
+
+	let current = 0;
+	let prev = 4;
+	let next = 1;
+
+	for (let i = 0; i < button.length; i++) {
+		button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+	}
+
+	const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+	const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+
+	const gotoNum = number => {
+		current = number;
+		prev = current - 1;
+		next = current + 1;
+
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].classList.remove("active");
+			slides[i].classList.remove("prev");
+			slides[i].classList.remove("next");
+		}
+
+		if (next == 5) {
+			next = 0;
+		}
+
+		if (prev == -1) {
+			prev = 4;
+		}
+
+		slides[current].classList.add("active");
+		slides[prev].classList.add("prev");
+		slides[next].classList.add("next");
+	}
+}
+const portfolioSlide_2 = function(){
+	const slider = document.querySelector(".items-2");
+	const slides = document.querySelectorAll(".item-2");
+	const button = document.querySelectorAll(".button-2");
+
+	let current = 0;
+	let prev = 4;
+	let next = 1;
+
+	for (let i = 0; i < button.length; i++) {
+		button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+	}
+
+	const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+	const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+
+	const gotoNum = number => {
+		current = number;
+		prev = current - 1;
+		next = current + 1;
+
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].classList.remove("active");
+			slides[i].classList.remove("prev");
+			slides[i].classList.remove("next");
+		}
+
+		if (next == 5) {
+			next = 0;
+		}
+
+		if (prev == -1) {
+			prev = 4;
+		}
+
+		slides[current].classList.add("active");
+		slides[prev].classList.add("prev");
+		slides[next].classList.add("next");
+	}
+}
+const portfolioSlide_3 = function(){
+	const slider = document.querySelector(".items-3");
+	const slides = document.querySelectorAll(".item-3");
+	const button = document.querySelectorAll(".button-3");
+
+	let current = 0;
+	let prev = 4;
+	let next = 1;
+
+	for (let i = 0; i < button.length; i++) {
+		button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+	}
+
+	const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+	const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+
+	const gotoNum = number => {
+		current = number;
+		prev = current - 1;
+		next = current + 1;
+
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].classList.remove("active");
+			slides[i].classList.remove("prev");
+			slides[i].classList.remove("next");
+		}
+
+		if (next == 5) {
+			next = 0;
+		}
+
+		if (prev == -1) {
+			prev = 4;
+		}
+
+		slides[current].classList.add("active");
+		slides[prev].classList.add("prev");
+		slides[next].classList.add("next");
+	}
+}
+const portfolioSlide_4 = function(){
+	const slider = document.querySelector(".items-4");
+	const slides = document.querySelectorAll(".item-4");
+	const button = document.querySelectorAll(".button-4");
+
+	let current = 0;
+	let prev = 4;
+	let next = 1;
+
+	for (let i = 0; i < button.length; i++) {
+		button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+	}
+
+	const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+	const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+
+	const gotoNum = number => {
+		current = number;
+		prev = current - 1;
+		next = current + 1;
+
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].classList.remove("active");
+			slides[i].classList.remove("prev");
+			slides[i].classList.remove("next");
+		}
+
+		if (next == 5) {
+			next = 0;
+		}
+
+		if (prev == -1) {
+			prev = 4;
+		}
+
+		slides[current].classList.add("active");
+		slides[prev].classList.add("prev");
+		slides[next].classList.add("next");
+	}
+}
+portfolioSlide_1();
+portfolioSlide_2();
+portfolioSlide_3();
+portfolioSlide_4();
