@@ -1,2 +1,2 @@
 # future-portfolio
-Portfolio website project 
+Portfolio website for the future me. ✌ 
